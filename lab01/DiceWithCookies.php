@@ -91,7 +91,7 @@
 
 				//kravspec punkt 2.
 				if(isset($_COOKIE["nbrOfRounds"]) && isset($_COOKIE["sumOfAllRounds"]) && !isset($_POST["btnRoll"]) && !isset($_POST["btnExit"]) && !isset($_POST["btnNewGame"])){
-					echo(publishData($_COOKIE["nbrOfRounds"], $_COOKIE["sumOfAllRounds"]));
+					echo(publishData($_COOKIE["sumOfAllRounds"], $_COOKIE["nbrOfRounds"]));
 					$disabled = false;
 				
 				}
